@@ -1,0 +1,403 @@
+@import "base.scss";
+@import "fonts.scss";
+
+body {
+	background: url(img/greenbg.jpg) no-repeat #1f203b;
+	background-size: 100% auto;
+}
+
+// Header & Nav
+//--------------------------------------------
+.header {
+	padding: 30px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	.logo {
+		display: inline-block;
+	}
+
+	.header-menu {
+		display: inline-block;
+		float: right;
+
+		a {
+			display: inline-block;
+			color: #fff;
+			text-decoration: underline;
+			float: left;
+			position: relative;
+			top: 10px;
+			left: -25px;
+			font-weight: 600;
+		}
+
+		.search-box {
+			display: inline-block;
+			float: right;
+
+			.search {
+				padding: 10px 30px 10px 10px;
+				border-radius: 3px;
+				border: none;
+
+				&:focus {
+					border: none;
+				}
+			}
+
+			.icon {
+				background: $dark-bg;
+				padding: 10px 20px;
+				position: relative;
+				left: -32px;
+				border-radius: 0px 3px 3px 0px;
+			}
+		}
+	}
+}
+
+// Sidebar & Themes Nav
+//--------------------------------------------
+
+.page {
+	margin-top: 50px;
+	position: relative;
+}
+
+.side-menu {
+	width: 180px;
+	background: $content-bg;
+	border-radius: 2px;
+	padding: 20px;
+	display: inline-block;	
+	float: left;
+
+	.title {
+		background: $dark-bg;
+		position: relative;
+		top: -20px;
+		right: 20px;
+		text-align: center;
+		padding: 15px 85px;
+		color: #fff;
+		font-weight: 700;
+		border-radius: 3px 3px 0px 0px;
+	}
+
+	a {
+		display: block;
+		padding: 20px 10px;
+		color: $text-color;
+		font-weight: 700;
+
+		&:hover {
+			color: $action-bg;
+		}
+
+		&:before {
+			content:'';
+			width: 216px;
+			height: 1px;
+			background: rgba(0,0,0,0.2);
+			display: block;
+			position: relative;
+			left: -29px;
+			top: 40px;
+		}
+
+		&:after {
+			content:url(img/arrow.png);
+			float: right;
+		}
+	}
+}
+
+a.actionbutton {
+	background: $action-bg;
+	font-weight: 600;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	margin-top: 20px;
+
+	&:hover {
+		opacity: 0.8;
+		color: #fff;
+	}
+
+	&:before {
+		width: 0px;
+		height: 0x;
+	}
+	
+	&:after {
+		content:'';
+		float: right;
+	}
+}
+
+// Article Content
+//--------------------------------------------
+
+.article-container {
+	display: inline-block;
+	background: $content-bg;
+	padding: 30px;
+	width: 600px;
+	float: right;
+	border-radius: 3px;
+	margin-top: -15px;
+
+	.header-content {
+		background: $dark-bg;
+		position: relative;
+		top: -30px;
+		left: -30px;
+		width: 570px;
+		padding: 40px 10px 40px 80px;
+		border-radius: 3px 3px 0px 0px;
+
+		.user-avatar {
+			border-radius: 50%;
+			position: absolute;
+			left: -70px;
+			top: 10px;
+			width: 100px;
+			height: 100px;
+			border: 5px solid $content-bg;
+		}
+
+		.article-title {
+			color: $content-bg;
+		}
+
+		.date{
+			color: #5a5a5a;
+		}
+
+		.username {
+			color: $content-bg;
+		}
+
+		.recomendation {
+			position: relative;
+			top: -25px;
+			left: 50px;
+			float: right;
+
+			.counter {
+				background: #323642;
+				padding: 20px 30px;
+				border: 3px 3px 0px 0px;
+				color: $content-bg;
+				font-weight: 700;
+			}
+
+			&:after {
+				content:'Recomendo';
+				color: $content-bg;
+				font-size: 8pt;
+				padding: 5px;
+				border: 3px solid #323642;
+				border-radius: 3px;
+				position: relative;
+				top: 43px;
+				left: -82px;
+			}
+		}
+	}
+
+	.info-article {
+		background: $subtitle-bg;
+		position: relative;
+		top: -30px;
+		left: -30px;
+		width: 570px;
+		padding: 20px 10px 20px 80px;
+		
+		.leasson {
+			color: #787878;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 0.8em;
+		}
+
+		.tags {
+			margin-top: 10px; 
+			.tag {
+				padding: 10px;
+				background: $tagsbg;
+				font-size: 0.7em;
+				font-weight: 600;
+				border-radius: 3px;
+				color: #616780;
+			}
+		}
+	}
+
+	color: $text-color;
+
+	.feed {
+		border-top: 1px solid rgba(0,0,0,0.3);
+		margin-top: 50px;
+		padding-top: 20px;
+	}
+	
+	.buttons {
+		position: relative;
+		bottom: -30px;
+		right: -257px;
+	}
+
+	.recomendar {
+		background: $action-bg;
+		border-radius: 0px 0px 3px 0px;
+		margin-left: -4px;
+	}
+
+	.comentar {
+		background: #d1d1d1;
+	}
+}
+
+// Comentarios
+//--------------------------------------------
+
+.coments-container {
+	display: inline-block;
+	background: $content-bg;
+	padding: 30px;
+	margin-top: 50px;
+	width: 600px;
+	left: 300px;
+	position: relative;
+	border-radius: 3px;
+
+	h3 {
+		display: inline-block;
+		font-size: 1.5em;
+	}
+
+	a {
+		display: inline-block;
+		text-decoration: underline;
+		color: $action-bg;
+		font-size: 1.5em;
+		float: right;
+	}
+
+	.coment {
+		padding-top: 20px;
+		.user-avatar {
+			border-radius: 50%;
+			display: inline-block;
+			float: left;
+		}
+		.username {
+			color: $action-bg;
+			display: inline-block;
+			vertical-align: top;
+			padding-left: 20px;
+			padding-top: 20px;
+		}
+
+		p {
+			display: inline-block;
+			width: 400px;
+			float: left;
+			padding-left: 20px;
+		}
+	}
+}
+
+
+.article-container {
+		
+		.header-content {
+			padding: 60px 10px 40px 80px !important;
+		}	
+		input.article-title {
+			background: $dark-bg;
+			border: none;
+			display: block;
+			width: 450px;
+			font-size: 1.5em;
+		}
+
+		.recomendation {
+			position: relative;
+			top: -25px;
+			left: 0px !important;
+			float: right;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		input.leassons {
+			width: 500px;
+			height: 100px;
+			background: $subtitle-bg;
+			border: 0px;
+			display: block;
+		}
+
+		input.tags-form{
+			background: $subtitle-bg;
+			border: 0px;
+			width: 400px;
+		}
+
+		textarea {
+			width: 600px;
+			height: 600px;
+			border: 1px dashed rgba(0,0,0,0.2);
+			border-radius: 5px;
+		}
+
+		.instructions {
+			color: rgba(0,0,0,0.5);
+			display: block;
+			width: 400px;
+			
+			.feature {
+				display: inline-block;
+				padding: 15px;
+				vertical-align: top;
+			}
+		}
+
+		.buttons-comment {
+			right: -272px;
+		}
+	}
+
+
+	.login {
+		background: rgba(0,0,0,0.8);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		overflow: hidden;
+		display: none;
+
+		.login-container {
+			background: $content-bg;
+			width: 600px;
+			margin: 100px auto;
+			padding: 40px;
+			border-radius: 5px;
+			text-align: center;
+		}
+
+		input {
+			display: block;
+			width: 300px;
+			margin: 10px auto;
+			padding: 20px;
+			background: rgba(0,0,0,0.1);
+			border-radius: 3px;
+			border: none;
+		}
+	}

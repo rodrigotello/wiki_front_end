@@ -1,0 +1,64 @@
+!!!
+%html
+	%head
+		%title Icalia Wiki
+		%meta{:charset => "utf-8"}
+		%link{:rel => "stylesheet", :href => "style.css"}
+	%body
+		.header
+			.container.center
+				.logo
+					%img{:src => "img/logo.png"}
+				%nav.header-menu
+					%a{:href => "#"} Entrar
+					.search-box
+						%input.search{:placeholder => "Buscar"}
+						%span.icon S
+		%section.page.container.center
+			%nav.side-menu
+				%span.title Temas
+				%a{:href => "#"} Rails
+				%a{:href => "#"} Front End
+				%a{:href => "#"} node.js
+				%a{:href => "#"} Objective-C
+				%a{:href => "#"} Testing
+				%a{:href => "#"} Móvil
+				%a{:href => "#"} Refinery
+				%a{:href => "#"} Rails
+				%a.actionbutton{:href => "#"} Escribir Articulo
+			.article-container
+				.header-content
+					%img.user-avatar{:src => "img/avatar.jpg"}
+					%h2.article-title Instrucciones recuerrentes en heroku
+					%span.date Creado el 31 de Enero del 2012 por:
+					%span.username eldelentes
+					.recomendation
+						%span.counter 11
+				.info-article
+					%span.leasson Leassons learned
+					%p Desarrollo agíl de aplicaciones en rails utilizando nuevas metodologías para la construcción de una webapp.
+					.tags
+						%span.tag Ruby and Rails
+						%span.tag Ruby and Rails
+						%span.tag Ruby and Rails
+				.article-content
+					%p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum asperiores placeat molestiae veritatis tempora molestias dolorum fuga voluptates numquam itaque praesentium quaerat soluta distinctio quidem eaque quibusdam dolor? Officia eaque.
+					%h3 Título de algún apartado.
+					%p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo beatae dolor vitae accusantium eaque explicabo unde non blanditiis accusamus hic at doloremque. Quis nostrum recusandae quibusdam sequi. Esse sequi vero?
+					%code 
+						@post.all.fin(9)
+				.feed
+					%span 
+						Ultima modificación por
+						%b Cheto
+						el 12 de mayo de 2010
+				.buttons
+					%a.btn.comentar{:href => "#"} Comentar
+					%a.btn.recomendar{:href => "#"} Recomendar
+			.coments-container
+				%h3 22 comentarios
+				%a{:href => "#"} Comentar
+				.coment
+					%img.user-avatar{:src => "img/avatar.jpg"}
+					%span.username Eduardo Higareda
+					%p Yo opino que este metodo podría optimisarse de mejor manera es cuestión de refactorizar el código.

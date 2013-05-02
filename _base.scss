@@ -1,0 +1,91 @@
+// Colors Settings
+//--------------------------------------------
+
+$text-color: #1c1c1c;
+$content-bg: #ffffff;
+$dark-bg: #252525;
+$action-bg: #e34a3a;
+$subtitle-bg: #ebebeb;
+$tagsbg: #c7ccd4;
+
+$alertColor: #eee0b7;
+$codeColor: #080a11;
+$consoleColor: #323642;
+
+// Reset
+//--------------------------------------------
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input, textarea {
+	&:focus {
+		border: none;
+		outline: none;
+	}
+}
+
+// Containers
+//--------------------------------------------
+
+.center {
+	margin: 0 auto;
+}
+
+.container {
+	width: 960px;
+}
+
+.column {
+	width: 6%;
+	max-width: 200px;
+	margin: 0px 5px;
+}
+
+// Typography, Paragraphs.
+//--------------------------------------------
+
+* {
+	font-size: 1em;
+}
+
+
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+code {
+	background: $codeColor;
+	color: #fff;
+	padding: 20px;
+	display: block;
+	border-radius: 5px;
+}
+
+// Buttons
+//--------------------------------------------
+
+.btn {
+	padding: 10px 50px;
+	display: inline-block;
+	color: #fff;
+}

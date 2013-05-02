@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400);
+
+//Typorahy Settings
+//-----------------------------------
+
+$fontBrand: 'Open Sans', sans-serif;
+$codeFont: 'Source Code Pro', sans-serif;
+
+body {
+	font-family: $fontBrand
+}
+
+h1 {
+	font-weight: 700;
+}
+
+h2, h3 {
+	font-weight: 600;
+}
+
+p {
+	font-weight: 300;
+	margin: 20px 0px;
+}
+
+code {
+	font-family: $codeFont;
+}

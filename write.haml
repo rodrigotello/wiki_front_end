@@ -1,0 +1,62 @@
+!!!
+%html
+	%head
+		%title Icalia Wiki
+		%meta{:charset => "utf-8"}
+		%link{:rel => "stylesheet", :href => "style.css"}
+	%body
+		.header
+			.container.center
+				%a.logo{:href => "index.html"}
+					%img{:src => "img/logo.png"}
+				%nav.header-menu
+					%a{:href => "#"} Entrar
+					.search-box
+						%input.search{:placeholder => "Buscar"}
+						%span.icon S
+		%section.page.container.center
+			%nav.side-menu
+				%span.title Temas
+				%a{:href => "#"} Rails
+				%a{:href => "#"} Front End
+				%a{:href => "#"} node.js
+				%a{:href => "#"} Objective-C
+				%a{:href => "#"} Testing
+				%a{:href => "#"} Móvil
+				%a{:href => "#"} Refinery
+				%a{:href => "#"} Rails
+				%a.actionbutton{:href => "#"} Escribir Articulo
+			.article-container
+				.header-content
+					%img.user-avatar{:src => "img/avatar.jpg"}
+					%input.article-title{:type => "text" ,:placeholder => "Ingresa el Título"}
+					.recomendation
+						%span.counter Save
+				.info-article
+					%span.leasson Agrega una pequeña descripcion de tu articulo:
+					%input.leassons{:type => "textarea", :placeholder => "¿Qué aprendiste o aprenderas al leer este articulo."}
+					%input.tags-form{:type => "textarea", :placeholder => "Tags"}
+				.article-content
+					%textarea{}
+				.instructions
+					%span Recuerda que puedes utilizar Markdown para estilizar el conenido.
+					%br
+					%span.feature
+						%b Negritas:
+						**example**
+					%span.feature	
+						%b Títulos
+						example#
+					%span.feature	
+						%b Títulos
+						example#
+					%span.feature	
+						%b Títulos
+						example#		
+				.buttons-comment
+					%a.btn.comentar{:href => "#"} Previsualizar
+					%a.btn.recomendar{:href => "#"} Publicar
+		.login
+			.login-container
+				%input{:type => "text"}
+				%input{:type => "password"}
