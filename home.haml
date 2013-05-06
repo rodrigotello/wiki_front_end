@@ -27,36 +27,13 @@
 				%a{:href => "#"} Refinery
 				%a{:href => "#"} Rails
 				%a.actionbutton{:href => "#"} Escribir Articulo
-			.article-container
-				.header-content
-					%img.user-avatar{:src => "img/avatar.jpg"}
-					%input.article-title{:type => "text" ,:placeholder => "Ingresa el Título"}
-					.recomendation
-						%span.counter Save
-				.info-article
-					%span.leasson Agrega una pequeña descripcion de tu articulo:
-					%input.leassons{:type => "textarea", :placeholder => "¿Qué aprendiste o aprenderas al leer este articulo."}
-					%input.tags-form{:type => "textarea", :placeholder => "Tags"}
-				.article-content
-					%textarea{}
-				.instructions
-					%span Recuerda que puedes utilizar Markdown para estilizar el conenido.
-					%br
-					%span.feature
-						%b Negritas:
-						**example**
-					%span.feature	
-						%b Títulos
-						example#
-					%span.feature	
-						%b Títulos
-						example#
-					%span.feature	
-						%b Títulos
-						example#		
-				.buttons-publish
-					%a.btn.comentar{:href => "#"} Previsualizar
-					%a.btn.recomendar{:href => "#"} Publicar
+		%section.news.container
+			%h2
+				Bienvenido  a li Wiki de
+				%b Icalia Labs
+				aquí  encontraras articulos de conocimiento.
+
+			%P Escrito por el equipo de Icalia Labs
 		.login#modal-login
 			.login-container
 				%a.close{:ref => "#"} X

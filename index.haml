@@ -7,7 +7,7 @@
 	%body
 		.header
 			.container.center
-				.logo
+				%a.logo{:href => "index.html"}
 					%img{:src => "img/logo.png"}
 				%nav.header-menu
 					%a{:href => "#"} Entrar
@@ -25,7 +25,7 @@
 				%a{:href => "#"} Móvil
 				%a{:href => "#"} Refinery
 				%a{:href => "#"} Rails
-				%a.actionbutton{:href => "#"} Escribir Articulo
+				%a.actionbutton{:href => "write.html"} Escribir Articulo
 			.article-container
 				.header-content
 					%img.user-avatar{:src => "img/avatar.jpg"}

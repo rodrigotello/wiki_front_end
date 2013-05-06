@@ -367,8 +367,10 @@ a.actionbutton {
 			}
 		}
 
-		.buttons-comment {
+		.buttons-publish {
 			right: -272px;
+			bottom: -30px;
+			position: relative;
 		}
 	}
 
@@ -377,10 +379,22 @@ a.actionbutton {
 		background: rgba(0,0,0,0.8);
 		width: 100%;
 		height: 100%;
-		position: absolute;
+		position: fixed;
 		top: 0px;
 		overflow: hidden;
 		display: none;
+
+		.close {
+			width: 20px;
+			height: 20px;
+			display: block;
+			padding: 10px;
+			background: $action-bg;
+			position: relative;
+			top: -40px;
+			left: 600px;
+			border-radius: 0px 3px 0px 0px;
+		}
 
 		.login-container {
 			background: $content-bg;
@@ -400,4 +414,26 @@ a.actionbutton {
 			border-radius: 3px;
 			border: none;
 		}
+
+		input[type="submit"] {
+			background: $action-bg;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
 	}
+.news {
+	display: inline-block;
+	padding: 30px;
+	width: 600px;
+	background: $dark-bg;
+	color: #fff;
+	border-radius: 3px;
+	margin-top: -15px;
+	margin-left: 50px;
+
+	h2 {
+		font-weight: 300;
+	}
+}
