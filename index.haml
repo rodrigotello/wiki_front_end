@@ -7,13 +7,13 @@
 	%body
 		.header
 			.container.center
-				%a.logo{:href => "index.html"}
+				%a.logo{:href => "home.html"}
 					%img{:src => "img/logo.png"}
 				%nav.header-menu
 					%a{:href => "#"} Entrar
 					.search-box
 						%input.search{:placeholder => "Buscar"}
-						%span.icon S
+						%span.icon
 		%section.page.container.center
 			%nav.side-menu
 				%span.title Temas
@@ -26,6 +26,12 @@
 				%a{:href => "#"} Refinery
 				%a{:href => "#"} Rails
 				%a.actionbutton{:href => "write.html"} Escribir Articulo
+			%nav.sub-menu
+				%a{:href => ""}  Tema 1
+				%a{:href => ""}  Tema 2
+				%a{:href => ""}  Tema 3
+				%a{:href => ""}  Tema 4
+				%a{:href => ""}  Tema 5
 			.article-container
 				.header-content
 					%img.user-avatar{:src => "img/avatar.jpg"}

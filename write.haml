@@ -8,13 +8,13 @@
 	%body
 		.header
 			.container.center
-				%a.logo{:href => "index.html"}
+				%a.logo{:href => "home.html"}
 					%img{:src => "img/logo.png"}
 				%nav.header-menu
 					%a#login{:href => "#"} Entrar
 					.search-box
 						%input.search{:placeholder => "Buscar"}
-						%span.icon S
+						%span.icon
 		%section.page.container.center
 			%nav.side-menu
 				%span.title Temas
@@ -55,7 +55,7 @@
 						%b Títulos
 						example#		
 				.buttons-publish
-					%a.btn.comentar{:href => "#"} Previsualizar
+					%a.btn.preview{:href => "#"} Previsualizar
 					%a.btn.recomendar{:href => "#"} Publicar
 		.login#modal-login
 			.login-container
@@ -73,8 +73,7 @@
 				$('#modal-login').hide('slow', function() {
 				});
 			});
-
-			$('.recomendar').click(function() {
-				$('.article-container').addClass('preview') {
+			$('.preview').click(function() {
+				$('.article-container').addClass("flip", function() {
 				});
 			});

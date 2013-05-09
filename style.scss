@@ -33,22 +33,28 @@ body {
 		.search-box {
 			display: inline-block;
 			float: right;
+			position: relative;
 
 			.search {
 				padding: 10px 30px 10px 10px;
-				border-radius: 3px;
+				border-radius: 3px 0px 0px 3px;
 				border: none;
+				transition: all .5s ease;
+				min-width: 170px;
 
 				&:focus {
 					border: none;
+					width: 400px;
 				}
 			}
 
 			.icon {
-				background: $dark-bg;
-				padding: 10px 20px;
+				background: url(img/search.png) $dark-bg no-repeat;
+				background-position: center;
+				padding: 20px 20px;
 				position: relative;
-				left: -32px;
+				float: right;
+				top: -38px;
 				border-radius: 0px 3px 3px 0px;
 			}
 		}
@@ -111,6 +117,34 @@ body {
 	}
 }
 
+// Sub Menu
+//--------------------------------------------
+
+.sub-menu {
+	width: 180px;
+	padding: 0px;
+	text-align: center;
+	margin-top: 37px;
+	display: inline-block;
+	position: absolute;
+	z-index: 100;
+
+	a {
+		display: block;
+		padding: 20px 20px;
+		color: $text-color;
+		font-weight: 700;
+
+		&:nth-child(odd) {
+			background: darken($content-bg, 10);
+		}
+
+		&:nth-child(even) {
+			background: darken($content-bg, 20);
+		}
+	}
+}
+
 a.actionbutton {
 	background: $action-bg;
 	font-weight: 600;
@@ -130,8 +164,9 @@ a.actionbutton {
 	}
 	
 	&:after {
-		content:'';
+		content: '';
 		float: right;
+		position: relative;
 	}
 }
 
@@ -157,13 +192,8 @@ a.actionbutton {
 		border-radius: 3px 3px 0px 0px;
 
 		.user-avatar {
-			border-radius: 50%;
-			position: absolute;
 			left: -70px;
 			top: 10px;
-			width: 100px;
-			height: 100px;
-			border: 5px solid $content-bg;
 		}
 
 		.article-title {
@@ -183,14 +213,6 @@ a.actionbutton {
 			top: -25px;
 			left: 50px;
 			float: right;
-
-			.counter {
-				background: #323642;
-				padding: 20px 30px;
-				border: 3px 3px 0px 0px;
-				color: $content-bg;
-				font-weight: 700;
-			}
 
 			&:after {
 				content:'Recomendo';
@@ -223,14 +245,6 @@ a.actionbutton {
 
 		.tags {
 			margin-top: 10px; 
-			.tag {
-				padding: 10px;
-				background: $tagsbg;
-				font-size: 0.7em;
-				font-weight: 600;
-				border-radius: 3px;
-				color: #616780;
-			}
 		}
 	}
 
@@ -309,6 +323,9 @@ a.actionbutton {
 	}
 }
 
+// Write Article
+//--------------------------------------------
+
 
 .article-container {
 		
@@ -372,8 +389,14 @@ a.actionbutton {
 			bottom: -30px;
 			position: relative;
 		}
-	}
 
+		.preview {
+			background: #d1d1d1;
+		}
+	}
+	
+// Login
+//--------------------------------------------
 
 	.login {
 		background: rgba(0,0,0,0.8);
@@ -423,6 +446,10 @@ a.actionbutton {
 			}
 		}
 	}
+
+// Home
+//--------------------------------------------
+
 .news {
 	display: inline-block;
 	padding: 30px;
@@ -435,5 +462,65 @@ a.actionbutton {
 
 	h2 {
 		font-weight: 300;
+		font-size: 2em;
+		margin: 20px 0px;
+	}
+
+	a {
+		color: #fff;
+		margin: 10px 0px;
+		display: block;
+	}
+
+	.sep {
+		margin: 10px 0px;
+	}
+
+	.column {
+		margin-top: 30px;
+		width: 45%;
+	}
+}
+
+// Links
+//--------------------------------------------
+
+.links {
+	display: inline-block;
+	width: 600px;
+	color: #fff;
+	margin-top: -30px;
+	margin-left: 50px;
+
+
+	.link-item {
+		background: $dark-bg;
+		display: block;
+		position: relative;
+		padding: 30px 0px 30px 100px;
+		border-radius: 3px;
+		margin: 20px 0px;
+
+		h2 {
+			color: #fff;
+		}
+
+		.user-avatar {
+			top: 20px;
+			left: -30px
+		}
+
+		.info {
+			color: #545454;
+		}
+
+		.username {
+			color: #fff;
+			display: inline-block;
+		}
+
+		.tags {
+			margin-top: 10px;
+		}
 	}
 }
